@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/49c6c8cf10.js"
+      crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,10 +33,10 @@
     <header>
       <nav>
         <ul>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="http://www.amylovestocode.com" target="_blank">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <h1>Amy Walker</h1>
@@ -49,86 +51,106 @@
           <h3>Web Development & Design Package</h3>
           <h4>$299 Flat fee Includes</h4>
         </div>
-        <div class="service-items">
-          <div class="item">
-            <figure></figure>
-            <p>1:1 Consultation</p>
+        <div class="service-items" id="services">
+          <div class="top-row">
+            <div class="item">
+              <i class="fa-solid fa-comments"></i>
+              <p>1:1 Consultation</p>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-palette"></i>
+              <p>Custom Design</p>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-laptop-code"></i>
+              <p>Four Page Responsive
+                Website</p>
+            </div>
           </div>
-          <div class="item">
-            <figure></figure>
-            <p>Custom Design</p>
-          </div>
-          <div class="item">
-            <figure></figure>
-            <p>Four Page Responsisve Website</p>
-          </div>
-          <div class="item">
-            <figure></figure>
-            <p>Branding Assistance</p>
-          </div>
-          <div class="item">
-            <figure></figure>
-            <p>Complete Deployment</p>
+          <div class="bottom-row">
+            <div class="item">
+              <i class="fa-solid fa-lightbulb"></i>
+              <p>Branding Assistance</p>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-rocket"></i>
+              <p>Complete Deployment</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="steps">
+      <div class="steps-box">
         <div class="steps-heading">
-          <h2>Steps</h2>
+          <h2>How It Works</h2>
         </div>
         <div class="steps">
-          <div class="step-item">
-            <h3>step one</h3>
-            <p>Complete consultation
-              questionnaire</p>
+          <div class="row-one">
+            <div class="step-item">
+              <h3>step one</h3>
+              <p>Complete consultation
+                questionnaire</p>
+            </div>
+            <div class="step-item">
+              <h3>step two</h3>
+              <p>Review and approve
+                mood board</p>
+            </div>
           </div>
-          <div class="step-item">
-            <h3>step two</h3>
-            <p>Review and approve
-              mood board</p>
+          <div class="row-two">
+            <div class="step-item">
+              <h3>step three</h3>
+              <p>I get to work creating
+                your site mockup</p>
+            </div>
+            <div class="step-item">
+              <h3>step four</h3>
+              <p>Review & approve
+                your site mockup</p>
+            </div>
           </div>
-          <div class="step-item">
-            <h3>step three</h3>
-            <p>I get to work creating
-              your site mockup</p>
+          <div class="row-three">
+            <div class="step-item">
+              <h3>step five</h3>
+              <p>I code up your site!</p>
+            </div>
+            <div class="step-item">
+              <h3>step six</h3>
+              <p>Review your site
+                Before it goes live</p>
+            </div>
           </div>
-          <div class="step-item">
-            <h3>step four</h3>
-            <p>Review & approve
-              your site mockup</p>
-          </div>
-          <div class="step-item">
-            <h3>step five</h3>
-            <p>I code up your site!</p>
-          </div>
-          <div class="step-item">
-            <h3>step six</h3>
-            <p>Review your site
-              Before it goes live</p>
-          </div>
-          <div class="step-item">
-            <h3>step seven</h3>
-            <p>Deploy</p>
+          <div class="row-four">
+            <div class="step-item">
+              <h3>step seven</h3>
+              <p>Deploy</p>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="contact-section">
+      <div class="contact-section" id="contact">
         <h2>Let's Connect</h2>
         <div class="contact-form">
           <h3>Contact Me</h3>
-          <input type="text" class="contact-form" placeholder="name">
-          <input type="email" class="contact-form" placeholder="email address">
-          <input type="text" class="contact-form" placeholder="message">
-          <input type="submit" class="contact-form" placeholder="submit">
+          <input type="text" class="contactform" id="name" placeholder="name">
+          <input type="email" class="contactform" id="emails"
+            placeholder="email address">
+          <input type="text" class="contactform" id="message"
+            placeholder="message">
+          <input type="submit" class="contactform" id="submit"
+            placeholder="submit">
         </div>
-        <div class="social-icons">
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
+        <div class="social-section">
+          <h3>Follow Me</h3>
+          <div class="social-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-git-square"></i>
+          </div>
         </div>
+
         <div class="copyright">Copyright Amy Walker 2022</div>
       </div>
     </footer>
@@ -136,7 +158,8 @@
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <script
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
